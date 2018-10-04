@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service xmlns="http://archiveschemas.aus.avaya.com/properties"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://archiveschemas.aus.avaya.com/properties ../../../target/dependency/properties.xsd"
+	name="${serviceName}" version="${serviceVersion}" application="${serviceName}-${serviceVersion}">
+	<smgr>
+		<description>WhiteList Service</description>
+		<term_order>1</term_order>
+		<term_group>1</term_group>
+		<fs_component>true</fs_component>
+		<up_component>false</up_component>
+
+		<attribute name="redirectNumber">
+			<displayName>Redirect Number</displayName>
+			<helpInfo>Alternate destination for the call. The correct format is:
+				handle@domain
+				For instance, +17205551212@example.com
+			</helpInfo>
+			<global>false</global>
+			<validation name="AnyString">
+				<type>STRING</type>
+			</validation>
+			<portlet_changeable>false</portlet_changeable>
+			<admin_visible>true</admin_visible>
+			<admin_changeable>true</admin_changeable>
+			<factory>
+				<value>3301@avaya.com</value>
+				<user_changeable>true</user_changeable>
+			</factory>
+		</attribute>
+
+		<attribute name="dbType">
+			<displayName>Database Type</displayName>
+			<helpInfo>Database Type can be either postgres or mysql. Default
+				postgres is used for WhiteList.</helpInfo>
+			<global>false</global>
+			<validation name="AnyString">
+				<type>STRING</type>
+			</validation>
+			<portlet_changeable>false</portlet_changeable>
+			<admin_visible>true</admin_visible>
+			<admin_changeable>true</admin_changeable>
+			<factory>
+				<value>postgres</value>
+				<user_changeable>true</user_changeable>
+			</factory>
+		</attribute>
+
+		<attribute name="dbUrl">
+			<displayName>Database Url</displayName>			
+			<helpInfo>Database Url which will be used to connect to the database.
+				The correct format for postgres is:
+				jdbc:postgresql://localhost/whitelist
+				The correct format for mysql
+				is:
+				jdbc:mysql://localhost/whitelist
+			</helpInfo>
+			<global>false</global>
+			<validation name="AnyString">
+				<type>STRING</type>
+			</validation>
+			<portlet_changeable>false</portlet_changeable>
+			<admin_visible>true</admin_visible>
+			<admin_changeable>true</admin_changeable>
+			<factory>
+				<value>jdbc:postgresql://localhost/whitelist</value>
+				<user_changeable>true</user_changeable>
+			</factory>
+		</attribute>
+
+		<attribute name="dbUsername">
+			<displayName>Database Username</displayName>
+			<helpInfo>Database Username which will be used to connect to the
+				database.</helpInfo>
+			<global>false</global>
+			<validation name="AnyString">
+				<type>STRING</type>
+			</validation>
+			<portlet_changeable>false</portlet_changeable>
+			<admin_visible>true</admin_visible>
+			<admin_changeable>true</admin_changeable>
+			<factory>
+				<value>postgres</value>
+				<user_changeable>true</user_changeable>
+			</factory>
+		</attribute>
+
+		<attribute name="dbPassword">
+			<displayName>Database Password</displayName>
+			<onChangeAlertMsg>Please ensure that the new password specified in the attribute matches the actual database password.</onChangeAlertMsg>			
+			<helpInfo>Database Password which will be used to connect to the
+				database.
+			</helpInfo>
+			<global>false</global>
+			<validation name="ArbitraryEncryptedString">
+				<type>ENCRYPTED_STRING</type>
+			</validation>
+			<admin_visible>true</admin_visible>
+			<admin_changeable>true</admin_changeable>
+			<factory>
+				<value>postgres</value>
+				<user_changeable>true</user_changeable>
+			</factory>
+		</attribute>
+
+		<attribute name="maxActive">
+			<displayName>Database Max Active Connection</displayName>
+			<helpInfo>Max database connection.</helpInfo>
+			<global>false</global>
+			<validation name="AnyString">
+				<type>STRING</type>
+			</validation>
+			<portlet_changeable>false</portlet_changeable>
+			<admin_visible>true</admin_visible>
+			<admin_changeable>true</admin_changeable>
+			<factory>
+				<value>100</value>
+				<user_changeable>true</user_changeable>
+			</factory>
+		</attribute>
+
+		<attribute name="maxWait">
+			<displayName>Database Max Wait (msec)</displayName>
+			<helpInfo>The maximum time in msec to wait for a database response before timing out.</helpInfo>
+			<global>false</global>
+			<validation name="AnyString">
+				<type>STRING</type>
+			</validation>
+			<portlet_changeable>false</portlet_changeable>
+			<admin_visible>true</admin_visible>
+			<admin_changeable>true</admin_changeable>
+			<factory>
+				<value>10000</value>
+				<user_changeable>true</user_changeable>
+			</factory>
+		</attribute>
+		<attribute name="com.avaya.supplierId">
+              <displayName>Supplier Id</displayName>
+              <helpInfo>Avaya provided supplier id</helpInfo>
+              <global>false</global>
+              <validation name="AnyString">
+                   <type>STRING</type>
+              </validation>
+              <admin_visible>true</admin_visible>
+              <admin_changeable>false</admin_changeable>
+              <factory>
+                    <value>10000000</value>
+                    <user_changeable>false</user_changeable>
+              </factory>
+          </attribute>
+	</smgr>
+</service>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ServiceRules name="${serviceName}" version="${serviceVersion}"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+
+	<SequencedServiceRule phase="imsterm" order='501'
+		desc="Interested in imsterm phase">
+	</SequencedServiceRule>
+</ServiceRules>

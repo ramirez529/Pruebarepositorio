@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<sip-app id="SipApp_ID"> 
+
+	<app-name>AAAihedDBv1-3.1.1.1.311103</app-name>
+	<display-name>AAAihedDBv1-3.1.1.1.311103</display-name>
+	<session-config>
+		<session-timeout>60</session-timeout>
+	</session-config>
+	<proxy-config>
+		<proxy-timeout>10800</proxy-timeout>
+	</proxy-config>
+
+	<servlet>
+		<description></description>
+		<display-name>CfSipServlet</display-name>
+		<servlet-name>CfSipServlet</servlet-name>
+		<servlet-class>com.avaya.collaboration.call.servlet.CfSipServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-selection>
+		<main-servlet>CfSipServlet</main-servlet>
+	</servlet-selection>
+
+	<listener>
+		<listener-class>com.avaya.service.ipt.invite_connection.listener.SipApplicationSessionListenerHandler</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>com.avaya.service.ipt.util.locking.AsynchronousEventUtils</listener-class>
+	</listener>
+</sip-app>

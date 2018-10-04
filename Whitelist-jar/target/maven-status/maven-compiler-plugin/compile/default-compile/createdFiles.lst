@@ -1,0 +1,4 @@
+com\avaya\services\whitelist\db\NamedQueries.class
+com\avaya\services\whitelist\db\CacheValues.class
+com\avaya\services\whitelist\db\WhiteListEntry.class
+com\avaya\services\whitelist\db\Team.class

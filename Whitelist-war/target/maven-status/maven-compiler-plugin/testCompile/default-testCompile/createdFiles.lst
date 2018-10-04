@@ -1,0 +1,8 @@
+com\avaya\services\whitelist\DestinationFinderImplTest.class
+com\avaya\services\whitelist\AlternateDestinationFinderImplTest.class
+com\avaya\services\whitelist\util\EjbJndiLookupImplTest.class
+com\avaya\services\whitelist\util\PersitanceUnitPropertiesTest.class
+com\avaya\services\whitelist\util\JndiEntryTest.class
+com\avaya\services\whitelist\util\JndiFilterAgentImplTest.class
+com\avaya\services\whitelist\WhiteListTest.class
+com\avaya\services\whitelist\DMListenerTest.class

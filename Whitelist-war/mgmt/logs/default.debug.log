@@ -1,0 +1,24 @@
+<11>Apr 20 16:52:06 bamlott18.forge.avaya.com NoProcessName: -NoSet 2016 033 1 com.avaya.zephyr.platform.dal.api.ServiceUtil | 0 Config file does not exist: /service.properties
+<11>Apr 20 16:52:06 bamlott18.forge.avaya.com NoProcessName: -NoSet 2016 122 1 com.avaya.zephyr.platform.dm.AbstractDMListener | 0 Config file does not exist: /service.properties
+<15>Apr 20 16:52:06 bamlott18 SipEngine[7419]: -04:00 2016 199 1 com.avaya.asm | 0 Unable to find binding for DMFactory - if this is not a bootstrapping application, this is an error
+<14>Apr 20 16:52:06 bamlott18 SipEngine[7419]: -04:00 2016 201 1 com.avaya.asm | 0 Creating DMFactory
+<14>Apr 20 16:52:06 bamlott18 SipEngine[7419]: -04:00 2016 206 1 com.avaya.asm | 0 Started creating DMFactory
+<14>Apr 20 16:52:06 bamlott18 SipEngine[7419]: -04:00 2016 210 1 com.avaya.asm | 0 Finished creating DMFactory
+<12>Apr 20 16:52:06 bamlott18 SipEngine[7419]: -04:00 2016 222 1 com.avaya.asm | 0 Calling component not registered with the DMFactory: ClassLoader Name=null(28985350_1825473228).  Not tracking 'AusServiceDAO' against this Class loader. Requested DataMgr is NOT currently tracked under a different Class Loader, so this will cause a performance problem due to frequent reinitializations. Class loader IDs stored in appMap:
+<14>Apr 20 16:52:06 bamlott18 SipEngine[7419]: -04:00 2016 226 1 com.avaya.asm | 0 /opt/Avaya/CommonServerPlatform/lib/dm.properties Not Found - will try to load from the applications ClassPath.
+<12>Apr 20 16:52:06 bamlott18 SipEngine[7419]: -04:00 2016 228 1 com.avaya.asm | 0 Error retrieving default load rules: java.io.IOException: Could not find requested properties file on the ClassPath: dm.properties
+<14>Apr 20 16:52:06 bamlott18 SipEngine[7419]: -04:00 2016 229 1 com.avaya.asm | 0 createDM: Creating class: AusServiceDAO
+<11>Apr 20 16:52:06 bamlott18 SipEngine[7419]: -04:00 2016 252 1 com.avaya.asm | 0 unable to load driver class org.postgresql.Driver
+<8>Apr 20 16:52:06 bamlott18 SipEngine[7419]: -04:00 2016 254 1 com.avaya.asm | 0 Failed creating DaoConnectionPool for ASMLOCAL
+<11>Apr 20 16:52:06 bamlott18 SipEngine[7419]: -04:00 2016 257 1 com.avaya.asm | 0 unable to load driver class org.postgresql.Driver
+<8>Apr 20 16:52:06 bamlott18 SipEngine[7419]: -04:00 2016 259 1 com.avaya.asm | 0 Failed creating DaoConnectionPool for ASM
+<11>Apr 20 16:52:06 bamlott18 SipEngine[7419]: -04:00 2016 264 1 com.avaya.asm | 0 Error encountered (re)initializing class com.avaya.zephyr.platform.dao.AusServiceDAO
+<11>Apr 20 16:52:06 bamlott18.forge.avaya.com com[7419]: -04:00 2016 352 1 com.avaya.services.whitelist.DMListener | 0 destroyFactoryOnAttributeChange entity manager factory creation failed because of Persistent error
+<11>Apr 20 16:52:06 bamlott18.forge.avaya.com com[7419]: -04:00 2016 355 1 com.avaya.services.whitelist.DMListener | 0 destroyFactoryOnAttributeChange entity manager factory creation failed because of Persistent error
+<11>Apr 20 16:52:06 bamlott18.forge.avaya.com com[7419]: -04:00 2016 357 1 com.avaya.services.whitelist.DMListener | 0 destroyFactoryOnAttributeChange entity manager factory creation failed because of Persistent error
+<11>Apr 20 16:52:06 bamlott18.forge.avaya.com com[7419]: -04:00 2016 361 1 com.avaya.services.whitelist.DMListener | 0 destroyFactoryOnAttributeChange entity manager factory creation failed because of Persistent error
+<11>Apr 20 16:52:06 bamlott18.forge.avaya.com com[7419]: -04:00 2016 364 1 com.avaya.services.whitelist.DMListener | 0 destroyFactoryOnAttributeChange entity manager factory creation failed because of Persistent error
+<11>Apr 20 16:52:06 bamlott18.forge.avaya.com com[7419]: -04:00 2016 365 1 com.avaya.services.whitelist.DMListener | 0 destroyFactoryOnAttributeChange entity manager factory creation failed because of Persistent error
+<11>Apr 20 16:52:06 bamlott18.forge.avaya.com com[7419]: -04:00 2016 367 1 com.avaya.services.whitelist.DMListener | 0 destroyFactoryOnAttributeChange entity manager factory creation failed because of Persistent error
+<11>Apr 20 16:52:06 bamlott18.forge.avaya.com com[7419]: -04:00 2016 370 1 com.avaya.services.whitelist.DMListener | 0 destroyFactoryOnAttributeChange entity manager factory creation failed because of Persistent error
+<11>Apr 20 16:52:06 bamlott18.forge.avaya.com com[7419]: -04:00 2016 372 1 com.avaya.services.whitelist.DMListener | 0 destroyFactoryOnAttributeChange entity manager factory creation failed because of Persistent error

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:alarms xmlns:p="http://archiveschemas.aus.avaya.com/snapinalarms"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://archiveschemas.aus.avaya.com/snapinalarms ../../../target/dependency/alarms.xsd ">
+	<p:alarm>
+		<p:eventcode>DB_ERROR_01</p:eventcode>
+		<p:alarmDisplayText>Whitelist service couldn't connect to the DB.
+		</p:alarmDisplayText>
+		<p:severity>major</p:severity>
+		<p:clearFlag>false</p:clearFlag>
+	</p:alarm>
+</p:alarms>
